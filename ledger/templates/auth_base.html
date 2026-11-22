@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubera Ledger</title>
+<style>
+:root{--bg:#f4efe2;--ink:#1b2430;--gold:#b8860b;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--ink:#eaf0f7;--gold:#f5c04a;--card:#1b2742}}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif}
+.box{background:var(--card);padding:28px;border-radius:16px;width:min(380px,92vw);box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
+h1{margin:0 0 4px}input{width:100%;padding:10px;margin:4px 0 12px;border-radius:8px;border:1px solid #8886;font:inherit}
+button{width:100%;padding:12px;border:0;border-radius:10px;background:var(--gold);font:inherit;font-weight:700;cursor:pointer}
+.helptext,.errorlist{font-size:.8rem;opacity:.75;padding-left:0;list-style:none}
+</style></head><body><div class="box"><h1>Kubera Ledger</h1>{% block body %}{% endblock %}</div></body></html>
